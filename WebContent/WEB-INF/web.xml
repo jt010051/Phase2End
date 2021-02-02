@@ -1,0 +1,29 @@
+<web-app>
+    <display-name>Guitar Center Registration</display-name>
+     <welcome-file-list>
+    <welcome-file>Register.jsp</welcome-file>
+   
+  </welcome-file-list>
+ <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.register.RegisterServlet</servlet-class>
+    </servlet>
+
+    
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/Registering</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.login.LoginServlet</servlet-class>
+    </servlet>
+
+    
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/Logging in</url-pattern>
+    </servlet-mapping>
+   
+
+</web-app>
